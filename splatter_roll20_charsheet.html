@@ -1,0 +1,108 @@
+<input class="hidden" type="number" name="attr_stymod"/>
+
+<h1 align="center">Splatter</h1>
+
+<br>
+
+<div class='3colrow'>
+  <div class='col'>
+    <div class="egenskaper">
+        <div class="data">
+            <h4>Namn</h4>
+            <input class="name" name="attr_character_name" type="textarea" />
+        </div>
+        
+        <div class="data">
+            <h4>Ålder</h4>
+            <input class="name" name="attr_character_age" type="textarea" />
+        </div>
+        
+        <div class="data">
+            <h4>Kön</h4>
+            <input class="name" name="attr_character_sex" type="textarea" />
+        </div>
+            
+        <div class="data">        
+            <h4>Karriär</h4>
+            <input class="name" name="attr_character_career" type="textarea" />
+        </div>
+        
+        <div class="data">    
+            <h4>Huvudhand</h4>
+            <input class="name" name="attr_character_mainhand" type="textarea" />
+        </div>
+        
+        <div class="data">    
+            <h4>Längd</h4>
+            <input class="name" name="attr_character_height" type="textarea" />
+        </div>
+        
+        <div class="data">    
+            <h4>Vikt</h4>
+            <input class="name" name="attr_character_weight" type="textarea" />
+        </div>
+        
+        <div class="data">    
+            <h4>Ögon</h4>
+            <input class="name" name="attr_character_eyes" type="textarea" />
+        </div>
+        
+        <div class="data">    
+            <h4>Hår</h4>
+            <input class="name" name="attr_character_hair" type="textarea" />
+        </div>
+    </div>
+  </div>
+
+  <div class='col'>
+    <div>
+        <h3>Egenskaper</h3>
+        <div class="egenskaper">
+            <div><h4>Smidighet <input type="number" name="attr_smi" value="2" /><button type="roll" value="" name="roll_smi"></button></h4></div>
+            <div><h4>Reaktion <input type="number" name="attr_rea" value="2" /><button type="roll" value="" name="roll_rea"></button></h4></div>
+            <div><h4>Styrka <input type="number" name="attr_sty" value="2" /><button type="roll" value="" name="roll_sty"></button></h4></div>
+            <div><h4>Fysik <input type="number" name="attr_fys" value="2" /><button type="roll" value="" name="roll_fys"></button></h4></div>
+            <div><h4>Psyke <input type="number" name="attr_psy" value="2" /><button type="roll" value="" name="roll_psy"></button></h4></div>
+            <div><h4>Visdom <input type="number" name="attr_vis" value="2" /><button type="roll" value="" name="roll_vis"></button></h4></div>
+            <div><h4>Karisma <input type="number" name="attr_kar" value="2" /><button type="roll" value="" name="roll_kar"></button></h4></div>
+            <div><h4>Intelligens <input type="number" name="attr_int" value="2" /><button type="roll" value="" name="roll_int"></button></h4></div>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div>
+        <h3>Specialiseringar</h3>
+        <div class="item"><input class="name" name="attr_spec1" type="textarea" /><input type="number" name="attr_spec1_num" value="0" /><button type="roll" value="" name="roll_spec1"></button></div>
+        <div class="item"><input class="name" name="attr_spec2" type="textarea" /><input type="number" name="attr_spec2_num" value="0" /><button type="roll" value="" name="roll_spec2"></button></div>
+        <div class="item"><input class="name" name="attr_spec3" type="textarea" /><input type="number" name="attr_spec3_num" value="0" /><button type="roll" value="" name="roll_spec3"></button></div>
+        <div class="item"><input class="name" name="attr_spec4" type="textarea" /><input type="number" name="attr_spec4_num" value="0" /><button type="roll" value="" name="roll_spec4"></button></div>
+        <div class="item"><input class="name" name="attr_spec5" type="textarea" /><input type="number" name="attr_spec5_num" value="0" /><button type="roll" value="" name="roll_spec5"></button></div>
+        <div class="item"><input class="name" name="attr_spec6" type="textarea" /><input type="number" name="attr_spec6_num" value="0" /><button type="roll" value="" name="roll_spec6"></button></div>
+        <div class="item"><input class="name" name="attr_spec7" type="textarea" /><input type="number" name="attr_spec7_num" value="0" /><button type="roll" value="" name="roll_spec7"></button></div>
+        <div class="item"><input class="name" name="attr_spec8" type="textarea" /><input type="number" name="attr_spec8_num" value="0" /><button type="roll" value="" name="roll_spec8"></button></div>
+        <div class="item"><input class="name" name="attr_spec9" type="textarea" /><input type="number" name="attr_spec9_num" value="0" /><button type="roll" value="" name="roll_spec9"></button></div>
+    </div>
+  </div>
+
+  <div class='col'>
+    <div class="kp">
+        <h3>Hälsa</h3>
+        <h4>Hälsopoäng <input type="number" name="attr_hpmax" value="0" /></h4>
+        <h4>Kvarvarande <input type="number" name="attr_hp" value="0" /></h4>
+    </div>
+    <br>
+    <div class="kroppsdelar">
+        <h3>Kroppsdelar</h3>
+        <h4>(oskadd/skadad/obrukbar)</h4>
+        <h4>Huvud <input type="radio" value="0" checked="true" name="attr_head" /><input type="radio" value="1" name="attr_head" /><input type="radio" value="2" name="attr_head" /></h4>
+        <h4>Höger arm <input type="radio" value="0" checked="true" name="attr_rarm" /><input type="radio" value="1" name="attr_rarm" /><input type="radio" value="2" name="attr_rarm" /></h4>
+        <h4>Vänster arm <input type="radio" value="0" checked="true" name="attr_varm" /><input type="radio" value="1" name="attr_varm" /><input type="radio" value="2" name="attr_varm" /></h4>
+        <h4>Bål <input type="radio" value="0" checked="true" name="attr_bal" /><input type="radio" value="1" name="attr_bal" /><input type="radio" value="2" name="attr_bal" /></h4>
+        <h4>Höger ben <input type="radio" value="0" checked="true" name="attr_rben" /><input type="radio" value="1" name="attr_rben" /><input type="radio" value="2" name="attr_rben" /></h4>
+        <h4>Vänster ben <input type="radio" value="0" checked="true" name="attr_vben" /><input type="radio" value="1" name="attr_vben" /><input type="radio" value="2" name="attr_vben" /></h4>
+    </div>    
+    <div class="utrustning">
+    </div>    
+  </div>
+</div>
