@@ -73,15 +73,69 @@
     
     <div>
         <h3>Specialiseringar</h3>
-        <div class="item"><input class="name" name="attr_spec1" type="textarea" /><input type="number" name="attr_spec1_num" value="0" /><button type="roll" value="" name="roll_spec1"></button></div>
-        <div class="item"><input class="name" name="attr_spec2" type="textarea" /><input type="number" name="attr_spec2_num" value="0" /><button type="roll" value="" name="roll_spec2"></button></div>
-        <div class="item"><input class="name" name="attr_spec3" type="textarea" /><input type="number" name="attr_spec3_num" value="0" /><button type="roll" value="" name="roll_spec3"></button></div>
-        <div class="item"><input class="name" name="attr_spec4" type="textarea" /><input type="number" name="attr_spec4_num" value="0" /><button type="roll" value="" name="roll_spec4"></button></div>
-        <div class="item"><input class="name" name="attr_spec5" type="textarea" /><input type="number" name="attr_spec5_num" value="0" /><button type="roll" value="" name="roll_spec5"></button></div>
-        <div class="item"><input class="name" name="attr_spec6" type="textarea" /><input type="number" name="attr_spec6_num" value="0" /><button type="roll" value="" name="roll_spec6"></button></div>
-        <div class="item"><input class="name" name="attr_spec7" type="textarea" /><input type="number" name="attr_spec7_num" value="0" /><button type="roll" value="" name="roll_spec7"></button></div>
-        <div class="item"><input class="name" name="attr_spec8" type="textarea" /><input type="number" name="attr_spec8_num" value="0" /><button type="roll" value="" name="roll_spec8"></button></div>
-        <div class="item"><input class="name" name="attr_spec9" type="textarea" /><input type="number" name="attr_spec9_num" value="0" /><button type="roll" value="" name="roll_spec9"></button></div>
+        <div class="item">
+            <input class="name" name="attr_spec1" type="textarea" />
+            <input class="eg_num" type="number" name="attr_spec1_num" value="0" />
+            <select class="eg_select" name="attr_spec1_select">
+                <option value="@{base-Strength} + @{mod-Strength}">Smi</option>
+                <option value="@{base-Dexterity} + @{mod-Dexterity}">Rea</option>
+                <option value="@{base-Constitution} + @{mod-Constitution}">Sty</option>
+                <option value="@{base-Intelligence} + @{mod-Intelligence}">Fys</option>
+                <option value="@{base-Perception} + @{mod-Perception}">Psy</option>
+                <option value="@{base-Willpower} + @{mod-Willpower}">Vis</option>
+                <option value="@{base-Willpower} + @{mod-Willpower}">Kar</option>
+                <option value="@{base-Willpower} + @{mod-Willpower}">Int</option>
+            </select>
+            <button type="roll" value="" name="roll_spec1"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec2" type="textarea" />
+            <input type="number" name="attr_spec2_num" value="0" />
+            <button type="roll" value="" name="roll_spec2"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec3" type="textarea" />
+            <input type="number" name="attr_spec3_num" value="0" />
+            <button type="roll" value="" name="roll_spec3"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec4" type="textarea" />
+            <input type="number" name="attr_spec4_num" value="0" />
+            <button type="roll" value="" name="roll_spec4"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec5" type="textarea" />
+            <input type="number" name="attr_spec5_num" value="0" />
+            <button type="roll" value="" name="roll_spec5"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec6" type="textarea" />
+            <input type="number" name="attr_spec6_num" value="0" />
+            <button type="roll" value="" name="roll_spec6"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec7" type="textarea" />
+            <input type="number" name="attr_spec7_num" value="0" />
+            <button type="roll" value="" name="roll_spec7"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec8" type="textarea" />
+            <input type="number" name="attr_spec8_num" value="0" />
+            <button type="roll" value="" name="roll_spec8"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec9" type="textarea" />
+            <input type="number" name="attr_spec9_num" value="0" />
+            <button type="roll" value="" name="roll_spec9"></button>
+        </div>
     </div>
   </div>
 

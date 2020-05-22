@@ -3,5 +3,13 @@
 }
 
 .sheet-name {
-    width: 180px;
+    width: 120px;
+}
+
+.sheet-eg_select {
+    width: 50px;
+}
+
+.sheet-eg_num {
+    width: 40px;
 }
