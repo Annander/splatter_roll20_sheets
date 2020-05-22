@@ -1,4 +1,4 @@
-<input class="hidden" type="number" name="attr_stymod"/>
+<input class="hidden" type="number" name="attr_modifikation"/>
 
 <h1 align="center">Splatter</h1>
 
@@ -9,47 +9,47 @@
     <div class="egenskaper">
         <div class="data">
             <h4>Namn</h4>
-            <input class="name" name="attr_character_name" type="textarea" />
+            <input class="line" name="attr_character_name" type="textarea" />
         </div>
         
         <div class="data">
             <h4>Ålder</h4>
-            <input class="name" name="attr_character_age" type="textarea" />
+            <input class="line" name="attr_character_age" type="textarea" />
         </div>
         
         <div class="data">
             <h4>Kön</h4>
-            <input class="name" name="attr_character_sex" type="textarea" />
+            <input class="line" name="attr_character_sex" type="textarea" />
         </div>
             
         <div class="data">        
             <h4>Karriär</h4>
-            <input class="name" name="attr_character_career" type="textarea" />
+            <input class="line" name="attr_character_career" type="textarea" />
         </div>
         
         <div class="data">    
             <h4>Huvudhand</h4>
-            <input class="name" name="attr_character_mainhand" type="textarea" />
+            <input class="line" name="attr_character_mainhand" type="textarea" />
         </div>
         
         <div class="data">    
             <h4>Längd</h4>
-            <input class="name" name="attr_character_height" type="textarea" />
+            <input class="line" name="attr_character_height" type="textarea" />
         </div>
         
         <div class="data">    
             <h4>Vikt</h4>
-            <input class="name" name="attr_character_weight" type="textarea" />
+            <input class="line" name="attr_character_weight" type="textarea" />
         </div>
         
         <div class="data">    
             <h4>Ögon</h4>
-            <input class="name" name="attr_character_eyes" type="textarea" />
+            <input class="line" name="attr_character_eyes" type="textarea" />
         </div>
         
         <div class="data">    
             <h4>Hår</h4>
-            <input class="name" name="attr_character_hair" type="textarea" />
+            <input class="line" name="attr_character_hair" type="textarea" />
         </div>
     </div>
   </div>
@@ -58,14 +58,54 @@
     <div>
         <h3>Egenskaper</h3>
         <div class="egenskaper">
-            <div><h4>Smidighet <input type="number" name="attr_smi" value="2" /><button type="roll" value="" name="roll_smi"></button></h4></div>
-            <div><h4>Reaktion <input type="number" name="attr_rea" value="2" /><button type="roll" value="" name="roll_rea"></button></h4></div>
-            <div><h4>Styrka <input type="number" name="attr_sty" value="2" /><button type="roll" value="" name="roll_sty"></button></h4></div>
-            <div><h4>Fysik <input type="number" name="attr_fys" value="2" /><button type="roll" value="" name="roll_fys"></button></h4></div>
-            <div><h4>Psyke <input type="number" name="attr_psy" value="2" /><button type="roll" value="" name="roll_psy"></button></h4></div>
-            <div><h4>Visdom <input type="number" name="attr_vis" value="2" /><button type="roll" value="" name="roll_vis"></button></h4></div>
-            <div><h4>Karisma <input type="number" name="attr_kar" value="2" /><button type="roll" value="" name="roll_kar"></button></h4></div>
-            <div><h4>Intelligens <input type="number" name="attr_int" value="2" /><button type="roll" value="" name="roll_int"></button></h4></div>
+            <div>
+                <h4>Smidighet 
+                    <input type="number" name="attr_smi" value="2" />
+                    <button type="roll" value="/e rolls Smidighet [[(@{smi}d6)}]]" name="roll_smi"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Reaktion 
+                    <input type="number" name="attr_rea" value="2" />
+                    <button type="roll" value="/e rolls Reaktion [[(@{rea}d6)}]]" name="roll_rea"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Styrka 
+                    <input type="number" name="attr_sty" value="2" />
+                    <button type="roll" value="/e rolls Styrka [[(@{sty}d6)}]]" name="roll_sty"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Fysik 
+                    <input type="number" name="attr_fys" value="2" />
+                    <button type="roll" value="/e rolls Fysik [[(@{fys}d6)}]]" name="roll_fys"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Psyke 
+                    <input type="number" name="attr_psy" value="2" />
+                    <button type="roll" value="/e rolls Psyke [[(@{psy}d6)}]]" name="roll_psy"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Visdom 
+                    <input type="number" name="attr_vis" value="2" />
+                    <button type="roll" value="/e rolls Visdom [[(@{vis}d6)}]]" name="roll_vis"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Karisma 
+                    <input type="number" name="attr_kar" value="2" />
+                    <button type="roll" value="/e rolls Karisma [[(@{kar}d6)}]]" name="roll_kar"></button>
+                </h4>
+            </div>
+            <div>
+                <h4>Intelligens 
+                    <input type="number" name="attr_int" value="2" />
+                    <button type="roll" value="/e rolls Intelligens [[(@{int}d6)}]]" name="roll_int"></button>
+                </h4>
+            </div>
         </div>
     </div>
     
@@ -74,67 +114,147 @@
     <div>
         <h3>Specialiseringar</h3>
         <div class="item">
-            <input class="name" name="attr_spec1" type="textarea" />
-            <input class="eg_num" type="number" name="attr_spec1_num" value="0" />
+            <input class="name" name="attr_spec1" type="text" />
+            <input type="number" name="attr_spec1_num" value="0" />
             <select class="eg_select" name="attr_spec1_select">
-                <option value="@{base-Strength} + @{mod-Strength}">Smi</option>
-                <option value="@{base-Dexterity} + @{mod-Dexterity}">Rea</option>
-                <option value="@{base-Constitution} + @{mod-Constitution}">Sty</option>
-                <option value="@{base-Intelligence} + @{mod-Intelligence}">Fys</option>
-                <option value="@{base-Perception} + @{mod-Perception}">Psy</option>
-                <option value="@{base-Willpower} + @{mod-Willpower}">Vis</option>
-                <option value="@{base-Willpower} + @{mod-Willpower}">Kar</option>
-                <option value="@{base-Willpower} + @{mod-Willpower}">Int</option>
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="" name="roll_spec1"></button>
+            <button type="roll" value="/e rolls @{spec1} [[(@{spec1_select}d6) + @{spec1_num}]]" name="roll_spec1"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec2" type="textarea" />
+            <input class="name" name="attr_spec2" type="text" />
             <input type="number" name="attr_spec2_num" value="0" />
-            <button type="roll" value="" name="roll_spec2"></button>
+            <select class="eg_select" name="attr_spec2_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec2} [[(@{spec2_select}d6) + @{spec2_num}]]" name="roll_spec2"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec3" type="textarea" />
+            <input class="name" name="attr_spec3" type="text" />
             <input type="number" name="attr_spec3_num" value="0" />
-            <button type="roll" value="" name="roll_spec3"></button>
+            <select class="eg_select" name="attr_spec3_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec3} [[(@{spec3_select}d6) + @{spec3_num}]]" name="roll_spec3"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec4" type="textarea" />
+            <input class="name" name="attr_spec4" type="text" />
             <input type="number" name="attr_spec4_num" value="0" />
-            <button type="roll" value="" name="roll_spec4"></button>
+            <select class="eg_select" name="attr_spec4_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec4} [[(@{spec4_select}d6) + @{spec4_num}]]" name="roll_spec4"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec5" type="textarea" />
+            <input class="name" name="attr_spec5" type="text" />
             <input type="number" name="attr_spec5_num" value="0" />
-            <button type="roll" value="" name="roll_spec5"></button>
+            <select class="eg_select" name="attr_spec5_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec5} [[(@{spec5_select}d6) + @{spec5_num}]]" name="roll_spec5"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec6" type="textarea" />
+            <input class="name" name="attr_spec6" type="text" />
             <input type="number" name="attr_spec6_num" value="0" />
-            <button type="roll" value="" name="roll_spec6"></button>
+            <select class="eg_select" name="attr_spec6_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec6} [[(@{spec6_select}d6) + @{spec6_num}]]" name="roll_spec6"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec7" type="textarea" />
+            <input class="name" name="attr_spec7" type="text" />
             <input type="number" name="attr_spec7_num" value="0" />
-            <button type="roll" value="" name="roll_spec7"></button>
+            <select class="eg_select" name="attr_spec7_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec7} [[(@{spec7_select}d6) + @{spec7_num}]]" name="roll_spec7"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec8" type="textarea" />
+            <input class="name" name="attr_spec8" type="text" />
             <input type="number" name="attr_spec8_num" value="0" />
-            <button type="roll" value="" name="roll_spec8"></button>
+            <select class="eg_select" name="attr_spec8_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec8} [[(@{spec8_select}d6) + @{spec8_num}]]" name="roll_spec8"></button>
         </div>
         
         <div class="item">
-            <input class="name" name="attr_spec9" type="textarea" />
+            <input class="name" name="attr_spec9" type="text" />
             <input type="number" name="attr_spec9_num" value="0" />
-            <button type="roll" value="" name="roll_spec9"></button>
+            <select class="eg_select" name="attr_spec9_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec9} [[(@{spec9_select}d6) + @{spec9_num}]]" name="roll_spec9"></button>
         </div>
     </div>
   </div>

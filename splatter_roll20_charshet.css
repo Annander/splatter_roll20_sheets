@@ -3,7 +3,11 @@
 }
 
 .sheet-name {
-    width: 120px;
+    width: 100px;
+}
+
+.sheet-line {
+    width: 200px;
 }
 
 .sheet-eg_select {
