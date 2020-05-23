@@ -2,6 +2,11 @@
     visibility: hidden;
 }
 
+.sheet-anteckningar {
+    width: 200px;
+    height: 80px;
+}
+
 .sheet-name {
     width: 100px;
 }

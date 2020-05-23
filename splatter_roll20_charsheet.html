@@ -9,48 +9,58 @@
     <div class="egenskaper">
         <div class="data">
             <h4>Namn</h4>
-            <input class="line" name="attr_character_name" type="textarea" />
+            <input class="line" name="attr_character_name" type="text" />
         </div>
         
         <div class="data">
             <h4>Ålder</h4>
-            <input class="line" name="attr_character_age" type="textarea" />
+            <input class="line" name="attr_age" type="text" />
         </div>
         
         <div class="data">
             <h4>Kön</h4>
-            <input class="line" name="attr_character_sex" type="textarea" />
+            <input class="line" name="attr_sex" type="text" />
         </div>
             
         <div class="data">        
             <h4>Karriär</h4>
-            <input class="line" name="attr_character_career" type="textarea" />
+            <input class="line" name="attr_career" type="text" />
         </div>
         
         <div class="data">    
             <h4>Huvudhand</h4>
-            <input class="line" name="attr_character_mainhand" type="textarea" />
+            <input class="line" name="attr_mainhand" type="text" />
         </div>
         
         <div class="data">    
             <h4>Längd</h4>
-            <input class="line" name="attr_character_height" type="textarea" />
+            <input class="line" name="attr_height" type="text" />
         </div>
         
         <div class="data">    
             <h4>Vikt</h4>
-            <input class="line" name="attr_character_weight" type="textarea" />
+            <input class="line" name="attr_weight" type="text" />
         </div>
         
         <div class="data">    
             <h4>Ögon</h4>
-            <input class="line" name="attr_character_eyes" type="textarea" />
+            <input class="line" name="attr_eyes" type="text" />
         </div>
         
         <div class="data">    
             <h4>Hår</h4>
-            <input class="line" name="attr_character_hair" type="textarea" />
+            <input class="line" name="attr_hair" type="text" />
         </div>
+        
+        <br>
+        
+        <h4>Fördelar</h4>
+        <textarea name="attr_fordelar" class="anteckningar" rows="1"></textarea>
+        
+        <br>
+        
+        <h4>Nackdelar</h4>
+        <textarea name="attr_nackdelar" class="anteckningar" rows="1"></textarea>
     </div>
   </div>
 
@@ -256,6 +266,54 @@
             </select>
             <button type="roll" value="/e rolls @{spec9} [[(@{spec9_select}d6) + @{spec9_num}]]" name="roll_spec9"></button>
         </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec10" type="text" />
+            <input type="number" name="attr_spec10_num" value="0" />
+            <select class="eg_select" name="attr_spec10_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec10} [[(@{spec10_select}d6) + @{spec10_num}]]" name="roll_spec10"></button>
+        </div>        
+        
+        <div class="item">
+            <input class="name" name="attr_spec11" type="text" />
+            <input type="number" name="attr_spec11_num" value="0" />
+            <select class="eg_select" name="attr_spec11_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec11} [[(@{spec11_select}d6) + @{spec11_num}]]" name="roll_spec11"></button>
+        </div>
+        
+        <div class="item">
+            <input class="name" name="attr_spec12" type="text" />
+            <input type="number" name="attr_spec12_num" value="0" />
+            <select class="eg_select" name="attr_spec12_select">
+                <option value="@{smi}">Smi</option>
+                <option value="@{rea}">Rea</option>
+                <option value="@{sty}">Sty</option>
+                <option value="@{fys}">Fys</option>
+                <option value="@{psy}">Psy</option>
+                <option value="@{vis}">Vis</option>
+                <option value="@{kar}">Kar</option>
+                <option value="@{int}">Int</option>
+            </select>
+            <button type="roll" value="/e rolls @{spec12} [[(@{spec12_select}d6) + @{spec12_num}]]" name="roll_spec12"></button>
+        </div>        
     </div>
   </div>
 
@@ -275,7 +333,11 @@
         <h4>Bål <input type="radio" value="0" checked="true" name="attr_bal" /><input type="radio" value="1" name="attr_bal" /><input type="radio" value="2" name="attr_bal" /></h4>
         <h4>Höger ben <input type="radio" value="0" checked="true" name="attr_rben" /><input type="radio" value="1" name="attr_rben" /><input type="radio" value="2" name="attr_rben" /></h4>
         <h4>Vänster ben <input type="radio" value="0" checked="true" name="attr_vben" /><input type="radio" value="1" name="attr_vben" /><input type="radio" value="2" name="attr_vben" /></h4>
-    </div>    
+    </div>
+    <div>
+        <h4>Förflyttning <input type="number" name="attr_move" value="0" /></h4>
+        <h4>Stridsbonus <input type="number" name="attr_combat" value="0" /></h4>
+    </div>
     <div class="utrustning">
     </div>    
   </div>
