@@ -71,49 +71,49 @@
             <div>
                 <h4>Smidighet 
                     <input type="number" name="attr_smi" value="2" />
-                    <button type="roll" value="/e rolls Smidighet [[(@{smi}d6)}]]" name="roll_smi"></button>
+                    <button type="roll" value="/e rolls Smidighet [[(@{smi}d6)}-?{Svårighetsgrad|8}]]" name="roll_smi"></button>
                 </h4>
             </div>
             <div>
                 <h4>Reaktion 
                     <input type="number" name="attr_rea" value="2" />
-                    <button type="roll" value="/e rolls Reaktion [[(@{rea}d6)}]]" name="roll_rea"></button>
+                    <button type="roll" value="/e rolls Reaktion [[(@{rea}d6)-?{Svårighetsgrad|8}}]]" name="roll_rea"></button>
                 </h4>
             </div>
             <div>
                 <h4>Styrka 
                     <input type="number" name="attr_sty" value="2" />
-                    <button type="roll" value="/e rolls Styrka [[(@{sty}d6)}]]" name="roll_sty"></button>
+                    <button type="roll" value="/e rolls Styrka [[(@{sty}d6)}-?{Svårighetsgrad|8}]]" name="roll_sty"></button>
                 </h4>
             </div>
             <div>
                 <h4>Fysik 
                     <input type="number" name="attr_fys" value="2" />
-                    <button type="roll" value="/e rolls Fysik [[(@{fys}d6)}]]" name="roll_fys"></button>
+                    <button type="roll" value="/e rolls Fysik [[(@{fys}d6)}-?{Svårighetsgrad|8}]]" name="roll_fys"></button>
                 </h4>
             </div>
             <div>
                 <h4>Psyke 
                     <input type="number" name="attr_psy" value="2" />
-                    <button type="roll" value="/e rolls Psyke [[(@{psy}d6)}]]" name="roll_psy"></button>
+                    <button type="roll" value="/e rolls Psyke [[(@{psy}d6)}-?{Svårighetsgrad|8}]]" name="roll_psy"></button>
                 </h4>
             </div>
             <div>
                 <h4>Visdom 
                     <input type="number" name="attr_vis" value="2" />
-                    <button type="roll" value="/e rolls Visdom [[(@{vis}d6)}]]" name="roll_vis"></button>
+                    <button type="roll" value="/e rolls Visdom [[(@{vis}d6)}-?{Svårighetsgrad|8}]]" name="roll_vis"></button>
                 </h4>
             </div>
             <div>
                 <h4>Karisma 
                     <input type="number" name="attr_kar" value="2" />
-                    <button type="roll" value="/e rolls Karisma [[(@{kar}d6)}]]" name="roll_kar"></button>
+                    <button type="roll" value="/e rolls Karisma [[(@{kar}d6)}-?{Svårighetsgrad|8}]]" name="roll_kar"></button>
                 </h4>
             </div>
             <div>
                 <h4>Intelligens 
                     <input type="number" name="attr_int" value="2" />
-                    <button type="roll" value="/e rolls Intelligens [[(@{int}d6)}]]" name="roll_int"></button>
+                    <button type="roll" value="/e rolls Intelligens [[(@{int}d6)}-?{Svårighetsgrad|8}]]" name="roll_int"></button>
                 </h4>
             </div>
         </div>
@@ -136,7 +136,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec1} [[(@{spec1_select}d6) + @{spec1_num}]]" name="roll_spec1"></button>
+            <button type="roll" value="/e rolls @{spec1} [[((@{spec1_select}d6) + @{spec1_num})-?{Svårighetsgrad|8}]]" name="roll_spec1"></button>
         </div>
         
         <div class="item">
@@ -152,7 +152,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec2} [[(@{spec2_select}d6) + @{spec2_num}]]" name="roll_spec2"></button>
+            <button type="roll" value="/e rolls @{spec2} [[((@{spec2_select}d6) + @{spec2_num})-?{Svårighetsgrad|8}]]" name="roll_spec2"></button>
         </div>
         
         <div class="item">
@@ -168,7 +168,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec3} [[(@{spec3_select}d6) + @{spec3_num}]]" name="roll_spec3"></button>
+            <button type="roll" value="/e rolls @{spec3} [[((@{spec3_select}d6) + @{spec3_num})-?{Svårighetsgrad|8}]]" name="roll_spec3"></button>
         </div>
         
         <div class="item">
@@ -184,7 +184,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec4} [[(@{spec4_select}d6) + @{spec4_num}]]" name="roll_spec4"></button>
+            <button type="roll" value="/e rolls @{spec4} [[((@{spec4_select}d6) + @{spec4_num})-?{Svårighetsgrad|8}]]" name="roll_spec4"></button>
         </div>
         
         <div class="item">
@@ -200,7 +200,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec5} [[(@{spec5_select}d6) + @{spec5_num}]]" name="roll_spec5"></button>
+            <button type="roll" value="/e rolls @{spec5} [[((@{spec5_select}d6) + @{spec5_num})-?{Svårighetsgrad|8}]]" name="roll_spec5"></button>
         </div>
         
         <div class="item">
@@ -216,7 +216,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec6} [[(@{spec6_select}d6) + @{spec6_num}]]" name="roll_spec6"></button>
+            <button type="roll" value="/e rolls @{spec6} [[((@{spec6_select}d6) + @{spec6_num})-?{Svårighetsgrad|8}]]" name="roll_spec6"></button>
         </div>
         
         <div class="item">
@@ -232,7 +232,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec7} [[(@{spec7_select}d6) + @{spec7_num}]]" name="roll_spec7"></button>
+            <button type="roll" value="/e rolls @{spec7} [[((@{spec7_select}d6) + @{spec7_num})-?{Svårighetsgrad|8}]]" name="roll_spec7"></button>
         </div>
         
         <div class="item">
@@ -248,7 +248,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec8} [[(@{spec8_select}d6) + @{spec8_num}]]" name="roll_spec8"></button>
+            <button type="roll" value="/e rolls @{spec8} [[((@{spec8_select}d6) + @{spec8_num})-?{Svårighetsgrad|8}]]" name="roll_spec8"></button>
         </div>
         
         <div class="item">
@@ -264,7 +264,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec9} [[(@{spec9_select}d6) + @{spec9_num}]]" name="roll_spec9"></button>
+            <button type="roll" value="/e rolls @{spec9} [[((@{spec9_select}d6) + @{spec9_num})-?{Svårighetsgrad|8}]]" name="roll_spec9"></button>
         </div>
         
         <div class="item">
@@ -280,7 +280,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec10} [[(@{spec10_select}d6) + @{spec10_num}]]" name="roll_spec10"></button>
+            <button type="roll" value="/e rolls @{spec10} [[((@{spec10_select}d6) + @{spec10_num})-?{Svårighetsgrad|8}]]" name="roll_spec10"></button>
         </div>        
         
         <div class="item">
@@ -296,7 +296,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec11} [[(@{spec11_select}d6) + @{spec11_num}]]" name="roll_spec11"></button>
+            <button type="roll" value="/e rolls @{spec11} [[((@{spec11_select}d6) + @{spec11_num})-?{Svårighetsgrad|8}]]" name="roll_spec11"></button>
         </div>
         
         <div class="item">
@@ -312,7 +312,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec12} [[(@{spec12_select}d6) + @{spec12_num}]]" name="roll_spec12"></button>
+            <button type="roll" value="/e rolls @{spec12} [[((@{spec12_select}d6) + @{spec12_num})-?{Svårighetsgrad|8}]]" name="roll_spec12"></button>
         </div>        
     </div>
   </div>
@@ -334,6 +334,9 @@
         <h4>Höger ben <input type="radio" value="0" checked="true" name="attr_rben" /><input type="radio" value="1" name="attr_rben" /><input type="radio" value="2" name="attr_rben" /></h4>
         <h4>Vänster ben <input type="radio" value="0" checked="true" name="attr_vben" /><input type="radio" value="1" name="attr_vben" /><input type="radio" value="2" name="attr_vben" /></h4>
     </div>
+    
+    <br>
+    
     <div>
         <h4>Förflyttning <input type="number" name="attr_move" value="0" /></h4>
         <h4>Stridsbonus <input type="number" name="attr_combat" value="0" /></h4>
