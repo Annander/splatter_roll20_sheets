@@ -1,4 +1,5 @@
-<input class="hidden" type="number" name="attr_modifikation"/>
+<input class="hidden" value="0" type="number" name="attr_skademod"/>
+<input class="hidden" value="0" type="number" name="attr_dicemod"/>
 
 <h1 align="center">Splatter</h1>
 
@@ -71,49 +72,49 @@
             <div>
                 <h4>Smidighet 
                     <input type="number" name="attr_smi" value="2" />
-                    <button type="roll" value="/e rolls Smidighet [[(@{smi}d6)-?{Svårighetsgrad|8}]]" name="roll_smi"></button>
+                    <button type="roll" value="/e rolls Smidighet [[((@{smi}-@{dicemod})d6)-(?{Svårighetsgrad|5}-@{skademod})]]" name="roll_smi"></button>
                 </h4>
             </div>
             <div>
                 <h4>Reaktion 
                     <input type="number" name="attr_rea" value="2" />
-                    <button type="roll" value="/e rolls Reaktion [[(@{rea}d6)-?{Svårighetsgrad|8}}]]" name="roll_rea"></button>
+                    <button type="roll" value="/e rolls Reaktion [[((@{rea}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_rea"></button>
                 </h4>
             </div>
             <div>
                 <h4>Styrka 
                     <input type="number" name="attr_sty" value="2" />
-                    <button type="roll" value="/e rolls Styrka [[(@{sty}d6)-?{Svårighetsgrad|8}]]" name="roll_sty"></button>
+                    <button type="roll" value="/e rolls Styrka [[((@{sty}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_sty"></button>
                 </h4>
             </div>
             <div>
                 <h4>Fysik 
                     <input type="number" name="attr_fys" value="2" />
-                    <button type="roll" value="/e rolls Fysik [[(@{fys}d6)-?{Svårighetsgrad|8}]]" name="roll_fys"></button>
+                    <button type="roll" value="/e rolls Fysik [[((@{fys}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_fys"></button>
                 </h4>
             </div>
             <div>
                 <h4>Psyke 
                     <input type="number" name="attr_psy" value="2" />
-                    <button type="roll" value="/e rolls Psyke [[(@{psy}d6)-?{Svårighetsgrad|8}]]" name="roll_psy"></button>
+                    <button type="roll" value="/e rolls Psyke [[((@{psy}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_psy"></button>
                 </h4>
             </div>
             <div>
                 <h4>Visdom 
                     <input type="number" name="attr_vis" value="2" />
-                    <button type="roll" value="/e rolls Visdom [[(@{vis}d6)-?{Svårighetsgrad|8}]]" name="roll_vis"></button>
+                    <button type="roll" value="/e rolls Visdom [[((@{vis}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_vis"></button>
                 </h4>
             </div>
             <div>
                 <h4>Karisma 
                     <input type="number" name="attr_kar" value="2" />
-                    <button type="roll" value="/e rolls Karisma [[(@{kar}d6)-?{Svårighetsgrad|8}]]" name="roll_kar"></button>
+                    <button type="roll" value="/e rolls Karisma [[((@{kar}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_kar"></button>
                 </h4>
             </div>
             <div>
                 <h4>Intelligens 
                     <input type="number" name="attr_int" value="2" />
-                    <button type="roll" value="/e rolls Intelligens [[(@{int}d6)-?{Svårighetsgrad|8}]]" name="roll_int"></button>
+                    <button type="roll" value="/e rolls Intelligens [[((@{int}-@{dicemod})d6)-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_int"></button>
                 </h4>
             </div>
         </div>
@@ -136,7 +137,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec1} [[((@{spec1_select}d6) + @{spec1_num})-?{Svårighetsgrad|8}]]" name="roll_spec1"></button>
+            <button type="roll" value="/e rolls @{spec1} [[(((@{spec1_select}-@{dicemod})d6) + @{spec1_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec1"></button>
         </div>
         
         <div class="item">
@@ -152,7 +153,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec2} [[((@{spec2_select}d6) + @{spec2_num})-?{Svårighetsgrad|8}]]" name="roll_spec2"></button>
+            <button type="roll" value="/e rolls @{spec2} [[(((@{spec2_select}-@{dicemod})d6) + @{spec2_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec2"></button>
         </div>
         
         <div class="item">
@@ -168,7 +169,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec3} [[((@{spec3_select}d6) + @{spec3_num})-?{Svårighetsgrad|8}]]" name="roll_spec3"></button>
+            <button type="roll" value="/e rolls @{spec3} [[(((@{spec3_select}-@{dicemod})d6) + @{spec3_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec3"></button>
         </div>
         
         <div class="item">
@@ -184,7 +185,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec4} [[((@{spec4_select}d6) + @{spec4_num})-?{Svårighetsgrad|8}]]" name="roll_spec4"></button>
+            <button type="roll" value="/e rolls @{spec4} [[(((@{spec4_select}-@{dicemod})d6) + @{spec4_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec4"></button>
         </div>
         
         <div class="item">
@@ -200,7 +201,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec5} [[((@{spec5_select}d6) + @{spec5_num})-?{Svårighetsgrad|8}]]" name="roll_spec5"></button>
+            <button type="roll" value="/e rolls @{spec5} [[(((@{spec5_select}-@{dicemod})d6) + @{spec5_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec5"></button>
         </div>
         
         <div class="item">
@@ -216,7 +217,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec6} [[((@{spec6_select}d6) + @{spec6_num})-?{Svårighetsgrad|8}]]" name="roll_spec6"></button>
+            <button type="roll" value="/e rolls @{spec6} [[(((@{spec6_select}-@{dicemod})d6) + @{spec6_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec6"></button>
         </div>
         
         <div class="item">
@@ -232,7 +233,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec7} [[((@{spec7_select}d6) + @{spec7_num})-?{Svårighetsgrad|8}]]" name="roll_spec7"></button>
+            <button type="roll" value="/e rolls @{spec7} [[(((@{spec7_select}-@{dicemod})d6) + @{spec7_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec7"></button>
         </div>
         
         <div class="item">
@@ -248,7 +249,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec8} [[((@{spec8_select}d6) + @{spec8_num})-?{Svårighetsgrad|8}]]" name="roll_spec8"></button>
+            <button type="roll" value="/e rolls @{spec8} [[(((@{spec8_select}-@{dicemod})d6) + @{spec8_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec8"></button>
         </div>
         
         <div class="item">
@@ -264,7 +265,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec9} [[((@{spec9_select}d6) + @{spec9_num})-?{Svårighetsgrad|8}]]" name="roll_spec9"></button>
+            <button type="roll" value="/e rolls @{spec9} [[(((@{spec9_select}-@{dicemod})d6) + @{spec9_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec9"></button>
         </div>
         
         <div class="item">
@@ -280,7 +281,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec10} [[((@{spec10_select}d6) + @{spec10_num})-?{Svårighetsgrad|8}]]" name="roll_spec10"></button>
+            <button type="roll" value="/e rolls @{spec10} [[(((@{spec10_select}-@{dicemod})d6) + @{spec10_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec10"></button>
         </div>        
         
         <div class="item">
@@ -296,7 +297,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec11} [[((@{spec11_select}d6) + @{spec11_num})-?{Svårighetsgrad|8}]]" name="roll_spec11"></button>
+            <button type="roll" value="/e rolls @{spec11} [[(((@{spec11_select}-@{dicemod})d6) + @{spec11_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec11"></button>
         </div>
         
         <div class="item">
@@ -312,7 +313,7 @@
                 <option value="@{kar}">Kar</option>
                 <option value="@{int}">Int</option>
             </select>
-            <button type="roll" value="/e rolls @{spec12} [[((@{spec12_select}d6) + @{spec12_num})-?{Svårighetsgrad|8}]]" name="roll_spec12"></button>
+            <button type="roll" value="/e rolls @{spec12} [[(((@{spec12_select}-@{dicemod})d6) + @{spec12_num})-?{Svårighetsgrad|5}-@{skademod}]]" name="roll_spec12"></button>
         </div>        
     </div>
   </div>
@@ -323,7 +324,14 @@
         <h4>Hälsopoäng <input type="number" name="attr_hpmax" value="0" /></h4>
         <h4>Kvarvarande <input type="number" name="attr_hp" value="0" /></h4>
     </div>
+    
+    <div>
+        <h4>Förflyttning <input type="number" name="attr_move" value="0" /></h4>
+        <h4>Stridsbonus <input type="number" name="attr_combat" value="0" /></h4>
+    </div>
+    
     <br>
+    
     <div class="kroppsdelar">
         <h3>Kroppsdelar</h3>
         <h4>(oskadd/skadad/obrukbar)</h4>
@@ -337,11 +345,73 @@
     
     <br>
     
-    <div>
-        <h4>Förflyttning <input type="number" name="attr_move" value="0" /></h4>
-        <h4>Stridsbonus <input type="number" name="attr_combat" value="0" /></h4>
-    </div>
     <div class="utrustning">
+        <h3>Utrustning</h3>
+        <textarea name="attr_stuff" class="anteckningar" rows="1"></textarea>
     </div>    
   </div>
 </div>
+
+<script type="text/worker">
+on("sheet:opened change:hp change:head change:rarm change:varm change:bal change:rben change:vben", function() {
+    getAttrs(["hp", "hpmax", "head", "rarm", "varm", "bal", "rben", "vben"], function(values) {
+        let hp = parseInt(values.hp,10)||0;
+        let hpmax = parseInt(values.hpmax,10)||0;
+        
+        let head = parseInt(values.head,10)||0;
+        let rarm = parseInt(values.rarm,10)||0;
+        let varm = parseInt(values.varm,10)||0;
+        let bal = parseInt(values.bal,10)||0;
+        let rben = parseInt(values.rben,10)||0;
+        let vben = parseInt(values.vben,10)||0;
+
+        let newMod = 0;
+        let diceMod = 0;
+
+        if(hp < (hpmax /2) && hp >= (hpmax/4))
+        {
+            newMod += 1;
+        }
+        else if (hp < (hpmax / 4))
+        {
+            diceMod += 1;
+        }
+
+        if(head == 1)
+        {
+            newMod += 1;
+        }
+
+        if(rarm == 1)
+        {
+            newMod += 1;
+        }   
+
+        if(varm == 1)
+        {
+            newMod += 1;
+        }     
+
+        if(bal == 1)
+        {
+            newMod += 1;
+        }
+
+        if(rben == 1)
+        {
+            newMod += 1;
+        }
+
+        if(vben == 1)
+        {
+            newMod += 1;
+        }
+        
+        setAttrs({
+            skademod: newMod,
+            dicemod: diceMod
+        });
+    });
+});
+</script>
+
